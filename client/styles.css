@@ -55,7 +55,7 @@ h4 {
     border-radius: 15px;
     min-height: 33%;
     padding: 1rem;
-    overflow-x: scroll;
+    overflow: hidden;
 }
 
 .app-box {
