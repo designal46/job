@@ -37,7 +37,7 @@ const ApplicationBox = (props) => {
     function setInterview(e) {
         e.preventDefault();
         fetch(`http://localhost:3333/jobs/update/${props.jobId}`, {
-            method: 'PUT',
+            method: 'POST',
             mode: 'cors',
             headers: {'Content-Type' : 'application/json'},
             body: JSON.stringify({
@@ -58,7 +58,7 @@ const ApplicationBox = (props) => {
             <ul id = 'app-box-ul'>
                 <li><b>Job title: </b>{props.jobTitle}</li>
                 <li><b>Company: </b>{props.company}</li>
-                <li><b>Posting: </b><a href={`${props.jobPosting}`}>click</a></li>
+                <li><b>Posting: </b><a href={`${props.jobPosting}`} target="_blank">click</a></li>
             </ul>
             {
                 props.status === 'completed' &&
