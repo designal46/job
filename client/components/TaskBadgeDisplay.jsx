@@ -36,7 +36,7 @@ const TaskBadgeDisplay = (props) => {
       { incompleteArr.includes(props.jobDetails.status)  ? (
         incompleteView()
       ) : (
-        completeView()
+        incompleteView()
       )}
     </div>
   )
